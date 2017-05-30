@@ -1,0 +1,35 @@
+/* Open Sans */
+@font-face {
+	font-family:"Open Sans";
+	font-style:normal;
+	font-weight:300;
+	src: url("../fonts/OpenSans-Light.ttf");
+}
+
+/* Dax */
+@font-face {
+	font-family:"Dax";
+	font-style:normal;
+	font-weight:300;
+	src: url("../fonts/Dax.ttf");
+}
+
+/* Dax Bold */
+@font-face {
+	font-family:"Dax Bold";
+	font-style:normal;
+	font-weight:300;
+	src: url("../fonts/Dax-Bold.ttf");
+}
+
+/* Flat Icon */
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

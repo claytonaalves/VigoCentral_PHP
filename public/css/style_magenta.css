@@ -1,0 +1,28 @@
+/* CENTRAL -> TEMA MAGENTA */
+.tema{background:#DD127B;}
+header h1 a{color:rgba(0,0,0,0.8);text-decoration:none;}
+.home .container .icons li:hover, .wsconfig .container .icons li:hover{background:#DD127B;border:1px solid #DD127B;}
+.home .container .icons a:active, .wsconfig .container .icons a:active{background:#DD127B;border:1px solid #DD127B;color:#fff;}
+.home .container .icons li:hover a span, .wsconfig .container .icons li:hover a span{color:rgba(255,255,255,1);}
+.home .container .icons li:hover a div, .wsconfig .container .icons li:hover a div{color:rgba(255,255,255,1);}
+.botao:hover, .dados .botao:hover{background:#DD127B;border:1px solid #DD127B;}
+.botao2:hover, .dados .botao2:hover{background:#DD127B;border:1px solid #DD127B;}
+.caminho li a:hover{color:#DD127B;}/*background-color:#DD127B;*/
+.telaLogin .boxLogin {background-repeat:no-repeat;color:#fff;background-color:#DD127B;box-sizing:border-box;}
+
+/* LOGO DA CENTRAL */
+.login_topo > span{color:#DD127B;opacity:0.5;filter:alpha(opacity=50);}
+.seta-01:before{top:0px;left:35px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-bottom:15px solid #DD127B;opacity:1;filter:alpha(opacity=100);}
+.seta-02:before{top:0px;left:50px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid #DD127B;opacity:0.2;filter:alpha(opacity=20);}
+.seta-03:before{top:15px;left:0px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid #DD127B;opacity:0.2;filter:alpha(opacity=20);}
+.seta-04:before{top:15px;left:15px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-bottom:15px solid #DD127B;opacity:0.7;filter:alpha(opacity=70);}
+.seta-05:before{top:15px;left:35px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid #DD127B;opacity:0.7;filter:alpha(opacity=70);}
+.seta-06:before{top:15px;left:50px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-bottom:15px solid #DD127B;opacity:0.5;filter:alpha(opacity=50);}
+.seta-07:before{top:30px;left:0px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-bottom:15px solid #DD127B;opacity:0.2;filter:alpha(opacity=20);}
+.seta-08:before{top:30px;left:15px;position:absolute;content:"";display:inline-block;vertical-align:middle;margin-right:0px;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid #DD127B;opacity:0.5;filter:alpha(opacity=50);}
+
+/* MEDIA SCREEM - LAGURA MAXIMA: 670px */
+@media screen and (max-width:670px){
+	header li a:hover{background-color:#DD127B;}
+	.home .container .icons li a:hover, .wsconfig .container .icons li a:hover{background:#DD127B;}
+}

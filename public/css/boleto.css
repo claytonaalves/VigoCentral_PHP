@@ -1,0 +1,22 @@
+*{font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif;font-size:10px;}
+body{margin:10px 0 0 10px;background:#ffffff;}
+table{border:1px solid gray;border-collapse:collapse;padding:0;width:600px;position:relative;}
+table td{vertical-align:top;text-align:center;height:25px;border:1px solid;padding-top:1px;}
+table td#logo{border-right:0;}
+table td#Titulo{font-size:18px;text-align:right;padding-top:5px;padding-right:15px;border-left:0;}
+table td#Num{padding-top:8px;font-size:14px;font-weight:bolder;}
+table td#Numero{padding-top:10px;font-size:11px;}
+table td.Instru{padding:10px 0 0 10px;text-align:left;}
+table td.Rodape{font-weight:bolder;text-align:left;padding:8px 0 0 15px;height:70px;background:#ececec;}
+table td.esp{text-align:left;padding:1px 0 0 5px;}
+table td.Dir{text-align:left;padding:1px 0 0 5px;width:150px;}
+table td.DirEsp{text-align:left;padding:1px 0 0 5px;width:150px;background:#ececec;}
+table td.DirEsp2{text-align:right;padding:1px 5px 0 0;width:150px;background:#ececec;}
+table td.Texto1{padding-left:5px;text-align:left;}
+#Auten{width:600px;height:60px;text-align:right;border-bottom:1px dashed gray;margin-bottom:15px;margin-top:5px;}
+.cbarra{width:600px;text-align:left;padding-top:5px;margin-bottom:10px;}
+
+.instrucoes{border:none;border-collapse:collapse;padding:0;width:600px;position:relative;}
+.instrucoes td{border:none;}
+.instrucoes div{border:none;}
+.instrucoes .trace{border-bottom:1px dashed gray;height:20px;padding-bottom:10px;margin-bottom:0px;}
