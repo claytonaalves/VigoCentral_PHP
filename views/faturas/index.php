@@ -88,10 +88,9 @@ $funcoes->verificaSessao();
 
                 </div>
 
-                <div class="tFooter">
+                <div class="tHeader">
                     <li class="tRow">
-                        <span class="align-l">Boletos: <strong><?php echo ($total_boletos < 10) ? '0' . $total_boletos : $total_boletos;
-                ; ?></strong></span>
+                        <span class="align-l">Boletos: <strong><?php echo ($total_boletos < 10) ? '0' . $total_boletos : $total_boletos; ?></strong></span>
                         <span class="align-l">&nbsp;</span>
                         <span class="align-l">&nbsp;</span>
                         <span class="align-r">&nbsp;<?php echo number_format($valor_total, 2, ',', '.'); ?></span>

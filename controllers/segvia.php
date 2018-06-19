@@ -160,7 +160,10 @@ class segvia extends Controller {
             $ValorMultaJuros = 0;
         } else {
 
-            if ($dias_em_atraso > 0) {
+            // Desativar o cálculo automático de multa/juros
+            // Agora na carteira registrada isto não é mais necessário
+
+            if ($dias_em_atraso > 999999) {
 
                 $bloqueto->obs = "O pagamento deste n&atilde;o quita d&eacute;bitos anteriores."; // Muda a mensagem caso haja algum desconto da mesma
 
