@@ -53,7 +53,7 @@ $funcoes->verificaSessao();
                         </li>
     <?php } ?>
                 </div>
-                <div class="tFooter">
+                <div class="tHeader">
                     <li class="tRow">
                         <span class="align-l">Total: <strong><?php echo ($total_servicos < 10) ? '0' . $total_servicos : $total_servicos; ?></strong></span>
                         <span class="align-r mobile"><strong><?php echo number_format($valor_total, 2, ',', '.'); ?></strong></span>

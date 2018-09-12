@@ -197,7 +197,7 @@ $funcoes->verificaSessao();
                                                         <?php } ?>
 
                                                         </div>
-                <div class="tFooter">
+                <div class="tHeader">
                     <li class="tRow">
                         <span class="align-l">&nbsp;</span>
                         <span class="align-l">&nbsp;</span>

@@ -189,7 +189,7 @@ function montalinhadigitavel($valor) {
 					<td class='Dir'>(=) Valor cobrado<br /><span style='float:right;margin-right:5px;'><b><?php echo number_format($this->bloqueto_final->valor, 2, ',', '.'); ?></b></span></td>
 				</tr>
                 <tr>
-					<td colspan='6' class='Rodape'>Pagador:<br /><?php echo $this->bloqueto_final->nome; ?><br /><?php echo $this->bloqueto_final->endereco; ?><br /><?php echo $this->bloqueto_final->cep; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->bloqueto_final->cidade; ?> - <?php echo $this->bloqueto_final->uf; ?></td>
+					<td colspan='6' class='Rodape'>Pagador:<br /><?php echo $this->bloqueto_final->nome . " - CPF/CNPJ: " . $this->bloqueto_final->cpfcgc; ?><br /><?php echo $this->bloqueto_final->endereco; ?><br /><?php echo $this->bloqueto_final->cep; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->bloqueto_final->cidade; ?> - <?php echo $this->bloqueto_final->uf; ?></td>
 				</tr>
             </tbody>
         </table>
@@ -256,7 +256,7 @@ function montalinhadigitavel($valor) {
 					<td class='Dir'>(=) Valor cobrado<br />&nbsp;&nbsp;<span style='float:right;margin-right:5px;'><b><?php echo number_format($this->bloqueto_final->valor, 2, ',', '.'); ?></b></span></td>
 				</tr>
                 <tr>
-					<td colspan='6' class='Rodape'>Pagador:<br /><?php echo $this->bloqueto_final->nome; ?><br /><?php echo $this->bloqueto_final->endereco; ?><br /><?php echo $this->bloqueto_final->cep; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->bloqueto_final->cidade; ?> - <?php echo $this->bloqueto_final->uf; ?></td>
+					<td colspan='6' class='Rodape'>Pagador:<br /><?php echo $this->bloqueto_final->nome . " - CPF/CNPJ: " . $this->bloqueto_final->cpfcgc; ?><br /><?php echo $this->bloqueto_final->endereco; ?><br /><?php echo $this->bloqueto_final->cep; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->bloqueto_final->cidade; ?> - <?php echo $this->bloqueto_final->uf; ?></td>
 				</tr>
             </tbody>
         </table>
