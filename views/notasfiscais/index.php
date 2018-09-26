@@ -73,7 +73,7 @@ $funcoes->verificaSessao();
     <?php } ?>
 
                                     </div>
-                                    <div class="tFooter">
+                                    <div class="tHeader">
                                         <li class="tRow">
                                             <span class="align-l">Notas Fiscais: <strong><?php echo ($total_notas < 10) ? '0' . $total_notas : $total_notas; ?></strong></span>
                                             <span class="align-l">&nbsp;</span>
