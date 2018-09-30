@@ -18,6 +18,56 @@ class Sessao_Model extends Model {
         $this->Desconecta();
     }
 
+    public function Usuario_Existe($login) {
+        $this->Conecta();
+
+        $query = "SELECT COUNT(*) AS total FROM cadastro_clientes WHERE login='" . $login . "'";
+        $result_set = $this->read($query);
+        $result = ($result_set[0][total] != 0);
+
+        if (!$result) {
+            $query = "SELECT COUNT(*) AS total FROM mikrotik_erp.radcheck WHERE username='$login' LIMIT 1";
+            $result_set = $this->read($query);
+            $result = ($result_set[0][total] != 0);
+        }
+
+        $this->Desconecta();
+
+        return $result;
+    }
+
+    public function Valida_Credenciais(&$login, $senha) {
+        $this->Conecta();
+
+        $query = "SELECT COUNT(*) AS total FROM cadastro_clientes WHERE login='$login' AND senha='$senha'";
+        $result_set = $this->read($query);
+        $result = ($result_set[0][total] != 0);
+
+        if (!$result) {
+            $query = "
+                SELECT rad.id_cliente, cli.login
+                FROM mikrotik_erp.radcheck rad
+                LEFT JOIN vigo_erp.cadastro_clientes cli ON (cli.id=rad.id_cliente)
+                WHERE
+                    username='$login'
+                    AND (
+                        ((attribute='MD5-Password') AND (value=MD5('$senha')))
+                        OR
+                        ((attribute='ClearText-Password') AND (value='$senha'))
+                    )
+                LIMIT 1
+            ";
+            $result_set = $this->read($query);
+            $result = (count($result_set) > 0);
+            if ($result) {
+                $login = $result_set[0][login];
+            }
+        }
+
+        $this->Desconecta();
+        return $result;
+    }
+
     public function Dados_Cliente($login) {
 
         $this->Conecta();

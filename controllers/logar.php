@@ -88,9 +88,9 @@ class Logar extends Controller {
             $logar_model = new Sessao_Model();
 
             // Consulta se existe algum cliente com login informado
-            $existe = $logar_model->Pesquisa_Credenciais($login_informado);
+            $existe = $logar_model->Usuario_Existe($login_informado);
 
-            if (($existe[0][total] == 0)) {
+            if (!$existe) {
 
                 // Aviso de login invalido e força um logout
                 @session_start();
@@ -100,11 +100,10 @@ class Logar extends Controller {
                 @@header("Location: index");
                 exit;
             } else {
-
                 // Consulta se existe algum cliente com login e senha informado
-                $existe = $logar_model->Pesquisa_Credenciais($login_informado, $senha_informada);
+                $existe = $logar_model->Valida_Credenciais($login_informado, $senha_informada);
 
-                if (($existe[0][total] == 0)) {
+                if (!$existe) {
 
                     // Aviso de senha errada e força um logout
                     @session_start();
